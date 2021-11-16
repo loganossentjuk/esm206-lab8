@@ -133,5 +133,8 @@ homes_predictions <- augment(lm1)
 
 #Make a histogram of the residuals from this model (lm1)
 hist(homes_predictions$.resid)
+ggplot(data = homes_predictions, x = .resid) +
+  geom_histogram(bins = 30)
 ```
 
+# BRANCHES ARE AWESOME
